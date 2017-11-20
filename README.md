@@ -1,3 +1,3 @@
 # Journals and their corresponding templates
 
-Pattern Recognition - elsarticle 1
+Pattern Recognition - elsarticle
