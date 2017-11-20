@@ -4,3 +4,7 @@
 *.log
 
 *.gz
+
+.texpadtmp/_includes/config.aux
+
+.texpadtmp/elsarticle-template/elsarticle-template.aux
