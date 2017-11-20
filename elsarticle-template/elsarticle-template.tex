@@ -1,9 +1,11 @@
+\input{../_includes/config} %packages
+
 \documentclass[review]{elsarticle}
 
 \usepackage{lineno,hyperref}
 \modulolinenumbers[5]
 
-\journal{Journal of \LaTeX\ Templates}
+\journal{\JOURNALNAME{}}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %% Elsevier bibliography styles
@@ -41,7 +43,7 @@
 
 \begin{frontmatter}
 
-\title{Elsevier \LaTeX\ template\tnoteref{mytitlenote}}
+\title{\TITLE{}\tnoteref{mytitlenote}}
 \tnotetext[mytitlenote]{Fully documented templates are available in the elsarticle package on \href{http://www.ctan.org/tex-archive/macros/latex/contrib/elsarticle}{CTAN}.}
 
 %% Group authors per affiliation:
@@ -61,12 +63,11 @@
 \address[mysecondaryaddress]{360 Park Avenue South, New York}
 
 \begin{abstract}
-This template helps you to create a properly formatted \LaTeX\ manuscript.
+\input{../abstract} %packages
 \end{abstract}
 
 \begin{keyword}
-\texttt{elsarticle.cls}\sep \LaTeX\sep Elsevier \sep template
-\MSC[2010] 00-01\sep  99-00
+\KEYWORDS
 \end{keyword}
 
 \end{frontmatter}
@@ -103,10 +104,10 @@ See the front matter of this document for examples. You are recommended to confo
 
 There are various bibliography styles available. You can select the style of your choice in the preamble of this document. These styles are Elsevier styles based on standard styles like Harvard and Vancouver. Please use Bib\TeX\ to generate your bibliography and include DOIs whenever available.
 
-Here are two sample references: \cite{Feynman1963118,Dirac1953888}.
+Here are two sample references: \cite{DUMMY:1}.
 
 \section*{References}
 
-\bibliography{mybibfile}
+\bibliography{../references}
 
 \end{document}
